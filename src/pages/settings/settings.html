@@ -1,0 +1,48 @@
+<!--
+  Generated template for the Settings page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+<ion-navbar transparent>
+</ion-navbar>
+
+
+</ion-header>
+
+
+<ion-content class="settingsBackground" padding>
+
+
+<div class="container">
+  <img class="image" src="assets/img/Header.png">
+  <p class="rolltext Amatic">
+    SETTINGS
+  </p>
+  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<div align="Center">
+<ion-item class="settingsBackground textbox">
+    <ion-label><img align="center" src='assets/img/Wisp ID Text.png'></ion-label>
+    <ion-input class = "whiteBackground textbox" [(ngModel)]="wispid"></ion-input>
+  </ion-item>
+
+<br/>
+<br/>
+
+<ion-item class="settingsBackground textbox">
+    <ion-label><img align="center" src='assets/img/Wisp Name Text.png'></ion-label>
+    <ion-input class="whiteBackground" [(ngModel)]="wispname"></ion-input>
+
+  </ion-item>
+
+</div>
+
+<div align="right">
+<img src='assets/img/Save Button.png' (click)="SaveUser(wispid, wispname);">
+</div>
+
+</div>
+</ion-content>

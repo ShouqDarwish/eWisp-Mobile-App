@@ -1,0 +1,33 @@
+<!--
+  Generated template for the GetScore page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar transparent>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content class="game1Background" padding>
+
+<div align="center" *ngIf = "score === 'Correct'">
+  <img src="assets/img/Correct.PNG" style = "margin-top: 20%, position: absolute;
+  right: 50%; width: 40%;">
+</div>
+<div align="center" *ngIf = "score === 'Wrong'">
+  <img src="assets/img/Wrong.PNG" style = "margin-top: 20%, position: absolute;
+  right: 50%; width: 40%;">
+</div>
+
+
+<img align="center" src="assets/img/Replay Button.png" width="20%" style = "margin-left: 30%" (click)='Replay()'>
+
+<img align="center" src="assets/img/Go Back Home Button.png" width="20%" (click)='goHome()'>
+
+
+</ion-content>

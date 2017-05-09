@@ -1,0 +1,349 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+@font-face {
+    font-family: 'LittleSunshine';
+    src: url('../assets/fonts/A little sunshine.woff');
+};
+
+@font-face {
+    font-family: 'Amatic';
+    src: url('../assets/fonts/AmaticSC-Regular.woff');
+};
+
+@font-face {
+    font-family: 'MoonFlower';
+    src: url('../assets/fonts/Moon Flower.woff');
+};
+
+
+MoonFlower
+{
+	font-family: MoonFlower !important;
+}
+
+.Amatic
+{
+	font-family: Amatic !important;
+}
+
+.LittleSunshine
+{
+	font-family: LittleSunshine !important;
+}
+
+//////////////////////////////////////////////////////
+//copy these
+.statstext
+{
+  font-family: Amatic !important;
+  font-size: 50px;
+  color: #FFFFFF;
+
+}
+
+.scoretable
+{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.scoretable
+{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.statsBackground
+{
+  background: #5DCEAF;
+}
+
+///////////////////////////////////////////////////
+ion-content
+{
+	background-image: url('../assets/img/back.JPG');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.plainBackground
+{
+	background: #5DCEAF;
+}
+
+.whiteBackground
+{
+  background: #FFFFFF;
+  margin-left: auto;
+    margin-right: auto;
+    align: center;
+    width: 10%;
+}
+
+.backButton
+{
+  background-image: url('../assets/img/Back Button.png');
+}
+.settingsBackground
+{
+	background: #03ADA5;
+}
+
+.game1Background
+{
+  background-image: url('../assets/img/game1back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+ion-list
+{
+	margin-left: auto;
+    margin-right: auto;
+    align: center;
+}
+
+.card
+{
+	
+	margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    align: center;
+    color: blue;
+    background-color: #ffffff;
+    width: 50%;
+    test-align: center;
+}
+
+.card-header
+{
+	color: red;
+}
+
+
+.diamond
+{
+	width: 80px;
+	height: 80px;
+
+	background: #D3D3D3;
+	margin: 50px;
+	/*Rotate*/
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-tranform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+@font-face {
+    font-family: 'Xoxoxa';
+    src: url('assets/fonts/Xoxoxa.woff');
+};
+
+p
+{
+	font-family: "Xoxoxa" !important;
+}
+
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes wiggle2 {
+    0% { transform: rotate(360deg); }
+   80% { transform: rotate(360deg); }
+   85% { transform: rotate(360deg); }
+   95% { transform: rotate(-360deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.wiggleAnim
+{
+	animation: wiggle2 5s infinite;
+	animation-delay: 1ms;
+}
+
+h1.wiggle {
+  display: inline-block;
+  animation: wiggle 2s;
+}
+
+h1.wiggle:hover {
+  animation: none;
+}
+
+.container {
+  
+  width: 100%;
+  position: relative;
+}
+.image {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.playtext {
+  z-index: 100;
+  position: absolute;
+  color: #35A084;
+  font-size: 80px;
+  right: 16%;
+  top: 8%;
+}
+
+.gamemode1text {
+  z-index: 100;
+  position: absolute;
+  color: #FFFFFF;
+  font-size: 80px;
+  left: 27%;
+  top: 12%;
+}
+
+.gamemode2text {
+  z-index: 100;
+  position: absolute;
+  color: #FFFFFF;
+  font-size: 75px;
+  left: 16%;
+  top: 15%;
+}
+
+.gamemode3text {
+  z-index: 100;
+  position: absolute;
+  color: #FFFFFF;
+  font-size: 75px;
+  left: 16%;
+  top: 16%;
+}
+
+.text {
+  z-index: 100;
+  position: absolute;
+  color: #35A084;
+  font-size: 80px;
+  right: 15%;
+  top: 10%;
+}
+
+.game1instruction {
+  z-index: 100;
+  position: absolute;
+  color: #35A084;
+  font-size: 35px;
+  left: 10%;
+  right: 10%;
+  top: 5%;
+}
+
+.start {
+  z-index: 100;
+  position: absolute;
+  color: #22227C;
+  font-size: 35px;
+  left: 10%;
+  right: 10%;
+  top: 70%;
+}
+
+.headertext {
+  z-index: 100;
+  position: absolute;
+  color: #35A084;
+  font-size: 90px;
+  left: 17%;
+  top: 3%;	
+}
+
+.rolltext {
+  z-index: 100;
+  position: absolute;
+  color: #35A084;
+  font-size: 90px;
+  left: 40%;
+  top: 0%;  
+}
+
+.nopadding {
+    padding: 0px !important;
+}
+
+.textbox {
+
+width: 50% !important;
+
+align: center;
+
+}
+
+
+/*
+==============================================
+floating
+==============================================
+*/
+
+.floating{
+  animation-name: floating;
+  -webkit-animation-name: floating;
+
+  animation-duration: 3s; 
+  -webkit-animation-duration: 3s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%);  
+  }
+  50% {
+    transform: translateY(6%);  
+  } 
+  100% {
+    transform: translateY(0%);
+  }     
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);  
+  }
+  50% {
+    -webkit-transform: translateY(6%);  
+  } 
+  100% {
+    -webkit-transform: translateY(0%);
+  }     
+}
